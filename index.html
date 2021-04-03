@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Log In</title>
+    <!-- HTML 
+  //////////////////////////////////////////////////////////////////////////////.///////...//////////////////////////////////////////////////////-->
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button class="toggle_btn" type="button" onclick="login()">Log In</button>
+                <button class="toggle_btn" type="button" onclick="register()">Register</button>
+            </div>
+            <form id="log-in" class="input-group" action="log_pythonWeb.py" accept-charset="utf-8">
+                <div class="icon_input" style="position: relative;">
+                    <div style="position: absolute;">
+                        <i class="fa fa-user icon" aria-hidden="true"></i>
+                    </div>
+                    <input class="input-field" type="text" placeholder="Email,Username" name="username" required>
+                </div>
+                <div class="icon_input" style="position: relative">
+                    <div class="inputfield" style="position: absolute">
+                        <i class="fa fa-key icon" aria-hidden="true"></i>
+                    </div>
+                    <input class="input-field" type="password" placeholder="Password" name="password" required>
+                </div>
+                <input class="check-box" type="checkbox" name="remember" value="1"><span>Remember Password</span>
+                <button type="submit" class="submit-btn" value="login_smt">Log In</button>
+            </form>
+            <form id="register" class="input-group" action="regi_pythonWeb.py" method="POST" accept-charset="utf-8">
+                <div class="icon_input">
+                    <i class="fa fa-user icon" aria-hidden="true"></i>
+                    <input class="input-field" type="text" placeholder="Username" name="username" required>
+                </div>
+                <div class="icon_input">
+                    <i class="fa fa-envelope icon" aria-hidden="true"></i>
+                    <input class="input-field" type="email" placeholder="Email" name="email" required>
+                </div>
+                <div class="icon_input">
+                    <i class="fa fa-key icon" aria-hidden="true"></i>
+                    <input class="input-field" type="password" placeholder="Password" name="password" required>
+                </div>
+                <div class="icon_input">
+                    <i class="fa fa-key icon" aria-hidden="true"></i>
+                    <input class="input-field" type="password" placeholder="Confirm Password" name="conf_paswd" required>
+                </div>
+                <input class="check-box" type="checkbox" name="accept" value="1"><span>I agree terms & privacy policy</span>
+                <button type="submit" class="submit-btn" value="register_smt">Register</button>
+            </form>
+            <div id="social" class="social_icon">
+                <i class="fa fa-google-plus" aria-hidden="true"></i>
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+                <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
